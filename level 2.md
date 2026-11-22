@@ -8,7 +8,10 @@
 
 ## Ход решения
 1. Подключился к уровню по SSH:
-`ssh bandit2@bandit.labs.overthewire.org -p 22202`. Посмотрел точное имя файла:
+```
+ssh bandit2@bandit.labs.overthewire.org -p 22202
+```
+Посмотрел точное имя файла:
 `ls`. Первые попытки без учета дефисов или без кавычек привели к ошибкам No such file or directory и unexpected argument.
 4. Прочитал файл, указав путь через ./ и взяв имя в кавычки:
 cat ./"--spaces in this filename--".
